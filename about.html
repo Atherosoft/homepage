@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Atherosoft</title>
+    <meta name="description"
+        content="Meet the experts behind Atherosoft, bridging medicine and AI for precision cardiology.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="about-page">
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="ci.svg" alt="Atherosoft Logo">
+                    <span>Atherosoft</span>
+                </a>
+                <div class="nav-links">
+                    <a href="index.html#product">Product</a>
+                    <a href="index.html#technology">Technology</a>
+                    <a href="about.html" class="active">About Us</a>
+                    <a href="#contact" onclick="openContactModal(); return false;">Contact</a>
+                </div>
+                <a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;"
+                    onclick="openContactModal(); return false;">Get
+                    Demo</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Our People</span>
+                    <h1>Bridging <span class="gradient-text">Medicine & AI</span></h1>
+                    <p style="color: var(--color-text-muted); max-width: 700px; margin: 0 auto;">
+                        Founded by cardiologists and AI scientists, Atherosoft is dedicated to revolutionizing
+                        cardiovascular interventions through advanced imaging and precision analytics.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <div class="container">
+                <div class="team-grid">
+                    <!-- CEO -->
+                    <div class="team-card">
+                        <div class="member-image">
+                            <img src="assets/ceo.jpg" alt="Soo-Jin Kang">
+                        </div>
+                        <div class="member-info">
+                            <span class="member-role">CEO</span>
+                            <h3>Soo-Jin Kang</h3>
+                            <ul class="member-bio">
+                                <li>Professor of Cardiology at Asan Medical Center, Seoul</li>
+                                <li>Ph.D. in Medicine, Hanyang University and Ulsan University</li>
+                                <li>Specializes in Coronary Imaging & Hemodynamics, and Echocardiography</li>
+                                <li>Post-doctoral Research Fellow at Columbia University Medical Center, NY</li>
+                                <li>Invited Faculty at CRF IVUS Core Lab, NY</li>
+                                <li>Lead/Corresponding author of 60+ SCI papers in cardiovascular imaging</li>
+                                <li>Corresponding author of 9 SCI papers in cardiovascular AI</li>
+                                <li>Holds 6 Korean and 4 Overseas patents</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- CTO -->
+                    <div class="team-card">
+                        <div class="member-image">
+                            <img src="assets/cto.jpg" alt="Joo Cho">
+                        </div>
+                        <div class="member-info">
+                            <span class="member-role">CTO</span>
+                            <h3>Joo Cho</h3>
+                            <ul class="member-bio">
+                                <li>Ph.D. in Medical AI Engineering, Seoul National University</li>
+                                <li>Former Researcher at LG Electronics, DeepBio, and Tomocube</li>
+                                <li>Developed core models for cardiovascular imaging analysis (4 papers as lead author)
+                                </li>
+                                <li>Lead author of 9 papers and co-author of 30+ papers, including Nature Cell Biology
+                                    and NeurIPS</li>
+                                <li>Holds 10+ Korean and 3 Overseas patents</li>
+                                <li>Expert in AI quality assessment, including Robustness and Uncertainty quantification
+                                </li>
+                                <li>Extensive experience in deploying ML software across automotive, medical, and
+                                    manufacturing sectors</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- AI Lead -->
+                    <div class="team-card">
+                        <div class="member-image">
+                            <img src="assets/ai_lead.jpg" alt="Sangwook Kim">
+                        </div>
+                        <div class="member-info">
+                            <span class="member-role">AI Lead</span>
+                            <h3>Sangwook Kim</h3>
+                            <ul class="member-bio">
+                                <li>Bachelor's in Biomedical Engineering, Korea University</li>
+                                <li>Ph.D. Candidate in Medical AI, University of Toronto</li>
+                                <li>Former Researcher at Peter Munk Cardiac Centre, University Health Network, Canada
+                                </li>
+                                <li>AI Researcher at Seoul National University Hospital and Severance Radiology</li>
+                                <li>Lead author of 7 papers and 20+ conference papers, including MICCAI and Radiology AI
+                                </li>
+                                <li>Specializes in cardiovascular multi-modal data analysis algorithms</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Dev Lead -->
+                    <div class="team-card">
+                        <div class="member-image">
+                            <img src="assets/dev_lead.jpg" alt="Jihyeong Yoo">
+                        </div>
+                        <div class="member-info">
+                            <span class="member-role">Dev Lead</span>
+                            <h3>Jihyeong Yoo</h3>
+                            <ul class="member-bio">
+                                <li>Bachelor's in Computer Science, Yonsei University</li>
+                                <li>Master's in Computer Science, HKUST</li>
+                                <li>Former Researcher at Tomocube</li>
+                                <li>Former AI Team Lead at Genesis Lab</li>
+                                <li>Led the acquisition of national AI reliability certification at Genesis Lab</li>
+                                <li>Author of 7 papers, including ICML, EuroIntervention, and JACC intervention</li>
+                                <li>Experienced in numerous AI software development projects</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <img src="ci.svg" alt="Atherosoft Logo" style="filter: grayscale(100%); opacity: 0.7;">
+                    <span style="color: var(--color-text-muted);">Atherosoft</span>
+                </div>
+                <div class="footer-info">
+                    <p>© 2025 Atherosoft. All rights reserved.</p>
+                    <p>Seoul, Korea</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <div class="modal-header">
+                <h2>Get in Touch</h2>
+                <p>Let's discuss how OMNIVUS can transform your practice.</p>
+            </div>
+            <form id="contactForm" action="https://formspree.io/f/xnnelnve" method="POST">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="organization">Organization</label>
+                    <input type="text" id="organization" name="organization">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+            <div id="formSuccess" class="form-message" style="display: none;">
+                <p>✓ Thank you! We'll get back to you soon.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
