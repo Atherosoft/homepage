@@ -566,25 +566,10 @@ footer {
 }
 
 .member-bio {
-    list-style: none;
-    padding: 0;
-}
-
-.member-bio li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.75rem;
     color: var(--color-text-muted);
     font-size: 0.95rem;
-    line-height: 1.5;
-}
-
-.member-bio li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: var(--color-primary);
-    font-weight: bold;
+    line-height: 1.7;
+    margin: 0;
 }
 
 @media (max-width: 992px) {
