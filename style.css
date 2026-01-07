@@ -619,8 +619,12 @@ footer {
 /* About Page Specific Styles */
 .about-hero {
     padding-top: 180px;
-    padding-bottom: 60px;
+    padding-bottom: 0;
     text-align: center;
+}
+
+.about-hero .section-header {
+    margin-bottom: 1rem;
 }
 
 .about-nav {
@@ -658,13 +662,13 @@ footer {
 }
 
 .team-section {
-    padding-top: var(--spacing-section);
+    padding-top: 0;
     padding-bottom: var(--spacing-section);
     scroll-margin-top: 100px;
 }
 
 .team-section .section-header {
-    margin-bottom: 4rem;
+    margin-bottom: 0;
 }
 
 .team-grid {
@@ -812,13 +816,14 @@ footer {
 
 /* History/Timeline Section */
 .history-section {
-    padding: var(--spacing-section) 0;
+    padding-top: 0;
+    padding-bottom: var(--spacing-section);
     scroll-margin-top: 100px;
 }
 
 .timeline {
     max-width: 800px;
-    margin: 4rem auto 0;
+    margin: 2rem auto 0;
     position: relative;
     padding-left: 3rem;
 }
