@@ -254,6 +254,10 @@ nav {
     margin-bottom: 4rem;
 }
 
+.publications-hero .section-header {
+    margin-bottom: 2rem;
+}
+
 .section-label {
     text-transform: uppercase;
     font-size: 0.875rem;
@@ -640,7 +644,7 @@ footer {
 /* Publications Page Specific Styles */
 .publications-hero {
     padding-top: 180px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     text-align: center;
     position: relative;
     z-index: 1;
@@ -660,6 +664,7 @@ footer {
 }
 
 .publications-section {
+    padding-top: 20px;
     padding-bottom: var(--spacing-section);
 }
 
