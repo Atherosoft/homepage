@@ -31,8 +31,14 @@
                 <div class="nav-links">
                     <a href="index.html#product">Product</a>
                     <a href="index.html#technology">Technology</a>
-                    <a href="about.html" class="active">About Us</a>
-                    <a href="publications.html">Publications</a>
+                    <div class="nav-dropdown">
+                        <a href="about.html" class="nav-dropdown-toggle active">About Us</a>
+                        <div class="nav-dropdown-menu">
+                            <a href="about.html#team">Our Team</a>
+                            <a href="publications.html">Publications</a>
+                            <a href="about.html#history">연혁</a>
+                        </div>
+                    </div>
                     <a href="#contact" onclick="openContactModal(); return false;">Contact</a>
                 </div>
                 <a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;"
@@ -53,11 +59,6 @@
                         cardiovascular interventions through advanced imaging and precision analytics.
                     </p>
                 </div>
-                <nav class="about-nav">
-                    <a href="#team" class="about-nav-link">Our Team</a>
-                    <a href="#publications" class="about-nav-link">Publications</a>
-                    <a href="#history" class="about-nav-link">연혁</a>
-                </nav>
             </div>
         </section>
 
