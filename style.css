@@ -546,8 +546,48 @@ footer {
     text-align: center;
 }
 
+.about-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.about-nav-link {
+    padding: 0.75rem 2rem;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: 50px;
+    color: var(--color-text-muted);
+    font-weight: 500;
+    transition: var(--transition-main);
+    font-size: 0.95rem;
+}
+
+.about-nav-link:hover {
+    color: var(--color-text-main);
+    border-color: var(--color-primary);
+    background: var(--color-bg-card-hover);
+    transform: translateY(-2px);
+}
+
+.about-nav-link:active,
+.about-nav-link.active {
+    background: linear-gradient(135deg, var(--color-primary) 0%, #7c3aed 100%);
+    border-color: var(--color-primary);
+    color: white;
+    box-shadow: 0 4px 20px var(--color-primary-glow);
+}
+
 .team-section {
+    padding-top: var(--spacing-section);
     padding-bottom: var(--spacing-section);
+    scroll-margin-top: 100px;
+}
+
+.team-section .section-header {
+    margin-bottom: 4rem;
 }
 
 .team-grid {
@@ -641,10 +681,62 @@ footer {
     }
 }
 
+/* Publications Preview Section */
+.publications-preview-section {
+    padding: var(--spacing-section) 0;
+    background: linear-gradient(180deg, var(--color-bg-deep) 0%, #0a0a0a 100%);
+    scroll-margin-top: 100px;
+}
+
+.publications-preview {
+    max-width: 900px;
+    margin: 3rem auto 0;
+    text-align: center;
+}
+
+.publication-preview-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.preview-stat {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: var(--transition-main);
+}
+
+.preview-stat:hover {
+    background: var(--color-bg-card-hover);
+    border-color: var(--color-primary);
+    transform: translateY(-5px);
+}
+
+.preview-stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+    font-family: var(--font-heading);
+}
+
+.preview-stat-label {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+}
+
+.publications-preview-cta {
+    margin-top: 2rem;
+}
+
 /* History/Timeline Section */
 .history-section {
     padding: var(--spacing-section) 0;
-    background: linear-gradient(180deg, var(--color-bg-deep) 0%, #0a0a0a 100%);
+    scroll-margin-top: 100px;
 }
 
 .timeline {
@@ -729,6 +821,24 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .about-nav {
+        gap: 1rem;
+    }
+
+    .about-nav-link {
+        padding: 0.625rem 1.5rem;
+        font-size: 0.875rem;
+    }
+
+    .publication-preview-stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .preview-stat-number {
+        font-size: 2rem;
+    }
+
     .timeline {
         padding-left: 2rem;
     }

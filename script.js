@@ -53,6 +53,33 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // About page navigation active state
+    const aboutNavLinks = document.querySelectorAll('.about-nav-link');
+    if (aboutNavLinks.length > 0) {
+        const sections = ['team', 'publications', 'history'];
+        
+        function updateActiveNav() {
+            const scrollPosition = window.scrollY + 150;
+            
+            sections.forEach((sectionId, index) => {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    const sectionTop = section.offsetTop;
+                    const sectionBottom = sectionTop + section.offsetHeight;
+                    const link = aboutNavLinks[index];
+                    
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                        aboutNavLinks.forEach(l => l.classList.remove('active'));
+                        link.classList.add('active');
+                    }
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveNav);
+        updateActiveNav(); // Initial check
+    }
+
     // Form submission
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
