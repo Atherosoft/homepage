@@ -281,13 +281,15 @@ nav {
 
 .hero-text {
     text-align: center;
-    max-width: 800px;
+    max-width: 1200px;
+    width: 100%;
 }
 
 .hero-text h1 {
     font-size: 3.5rem;
     line-height: 1.1;
     margin-bottom: 1.5rem;
+    white-space: nowrap;
 }
 
 .hero-text p {
