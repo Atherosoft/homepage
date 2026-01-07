@@ -619,7 +619,7 @@ footer {
 /* About Page Specific Styles */
 .about-hero {
     padding-top: 180px;
-    padding-bottom: 0;
+    padding-bottom: 3rem;
     text-align: center;
 }
 
@@ -662,7 +662,7 @@ footer {
 }
 
 .team-section {
-    padding-top: 0;
+    padding-top: 2rem;
     padding-bottom: var(--spacing-section);
     scroll-margin-top: 100px;
 }
@@ -816,7 +816,7 @@ footer {
 
 /* History/Timeline Section */
 .history-section {
-    padding-top: 0;
+    padding-top: 2rem;
     padding-bottom: var(--spacing-section);
     scroll-margin-top: 100px;
 }
@@ -947,7 +947,7 @@ footer {
 /* Publications Page Specific Styles */
 .publications-hero {
     padding-top: 180px;
-    padding-bottom: 0;
+    padding-bottom: 3rem;
     text-align: center;
     position: relative;
     z-index: 1;
@@ -967,7 +967,7 @@ footer {
 }
 
 .publications-section {
-    padding-top: 0;
+    padding-top: 2rem;
     padding-bottom: var(--spacing-section);
 }
 
