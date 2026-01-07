@@ -24,6 +24,48 @@
     /* Spacing */
     --spacing-container: 1200px;
     --spacing-section: 6rem;
+
+    /* Transitions & Effects */
+    --transition-main: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-glow: rgba(168, 85, 247, 0.15);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: var(--transition-main);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-1 {
+    transition-delay: 0.1s;
+}
+
+.delay-2 {
+    transition-delay: 0.2s;
+}
+
+.delay-3 {
+    transition-delay: 0.3s;
 }
 
 * {
@@ -598,8 +640,23 @@ footer {
 /* Publications Page Specific Styles */
 .publications-hero {
     padding-top: 180px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
     text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.publications-hero::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, var(--color-primary-glow) 0%, transparent 70%);
+    opacity: 0.3;
+    z-index: -1;
+    filter: blur(60px);
 }
 
 .publications-section {
@@ -631,20 +688,23 @@ footer {
 .publication-item {
     display: grid;
     grid-template-columns: 80px 1fr;
-    gap: 2rem;
-    background: var(--color-bg-card);
-    border: 1px solid var(--color-border);
-    border-radius: 16px;
-    padding: 2rem;
-    transition: all 0.3s ease;
+    gap: 2.5rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 2.5rem;
+    transition: var(--transition-main);
     align-items: start;
 }
 
 .publication-item:hover {
-    background: var(--color-bg-card-hover);
+    background: rgba(255, 255, 255, 0.05);
     border-color: var(--color-primary);
-    transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+        0 0 20px var(--glass-glow);
 }
 
 .publication-year {
@@ -694,6 +754,17 @@ footer {
     border: 1px solid var(--color-primary);
     border-radius: 12px;
     color: var(--color-primary);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.publication-ai-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid var(--color-accent);
+    border-radius: 12px;
+    color: var(--color-accent);
     font-size: 0.8rem;
     font-weight: 600;
 }
