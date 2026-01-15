@@ -173,9 +173,10 @@ nav {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    font-family: var(--font-heading);
+    font-family: "Malgun Gothic", "Outfit", sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .logo img {
