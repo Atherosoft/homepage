@@ -715,6 +715,8 @@ footer {
     overflow: hidden;
     border: 1px solid var(--color-border);
     margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
 }
 
 .member-image img {
@@ -722,6 +724,7 @@ footer {
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
+    border-radius: 12px;
 }
 
 .team-card:hover .member-image img {
