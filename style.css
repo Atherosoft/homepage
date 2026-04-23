@@ -682,9 +682,10 @@ footer {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
     gap: 2rem;
-    max-width: 1400px;
+    justify-content: center;
+    max-width: 1050px;
     margin: 0 auto;
 }
 
@@ -752,13 +753,6 @@ footer {
     font-size: 0.875rem;
     font-weight: 500;
     letter-spacing: 0.02em;
-}
-
-@media (max-width: 1200px) {
-    .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
 }
 
 @media (max-width: 768px) {
